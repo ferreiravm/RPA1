@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Pesquisa</title>
+</head>
+<body>
+    <h1>Resultados para: "{{ termo_busca }}"</h1>
+    
+    {% if dados %}
+        <table border="1">
+            <tr>
+                <th>Título</th>
+                <th>Link</th>
+            </tr>
+            {% for item in dados %}
+            <tr>
+                <td>{{ item['Título'] }}</td>
+                <td><a href="{{ item['Link'] }}" target="_blank">{{ item['Link'] }}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p><strong>Os resultados foram salvos no arquivo Excel: resultados_duckduckgo.xlsx</strong></p>
+    {% else %}
+        <p>Nenhum resultado encontrado.</p>
+    {% endif %}
+
+    <a href="/">Fazer outra pesquisa</a>
+</body>
+</html>

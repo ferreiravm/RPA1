@@ -1,0 +1,18 @@
+# Ignorar ambiente virtual
+.venv/
+
+# Ignorar arquivos gerados pelo Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar arquivo Excel gerado pelo script
+resultados_duckduckgo.xlsx
+
+# Ignorar executável do ChromeDriver
+chromedriver
+
+# Ignorar configurações locais de IDE (opcional)
+.vscode/
+
+.env
