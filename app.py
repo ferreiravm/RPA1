@@ -13,8 +13,7 @@ import os
 app = Flask(__name__)
 
 <<<<<<< HEAD
-# Caminho para o ChromeDriver
-CHROMEDRIVER_PATH = r"C:"
+
 =======
 # Carregar variáveis do arquivo .env
 load_dotenv()
