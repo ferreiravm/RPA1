@@ -12,9 +12,7 @@ import os
 # Configuração do Flask
 app = Flask(__name__)
 
-<<<<<<< HEAD
 
-=======
 # Carregar variáveis do arquivo .env
 load_dotenv()
 
