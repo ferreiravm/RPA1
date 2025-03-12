@@ -22,7 +22,6 @@ CHROMEDRIVER_PATH = os.getenv("CHROMEDRIVER_PATH")
 
 if not CHROMEDRIVER_PATH:
     raise Exception("A variável CHROMEDRIVER_PATH não está definida no arquivo .env.")
->>>>>>> 96fef57 (Adicionado suporte ao .env e atualizado o .gitignore)
 
 # Função para executar a pesquisa
 def realizar_pesquisa(termo_busca, max_resultados):
